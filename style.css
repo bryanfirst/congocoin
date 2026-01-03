@@ -1,0 +1,187 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: poppins,sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    /* Dégradé radial pour un effet de lumière centrale */
+    background: radial-gradient(circle at center, #001a33 0%, #00050a 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    font-family: 'Inter', -apple-system, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    padding: 30px;
+    width: 420px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+}
+section h1{
+    font-size: 30px;
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.input-box{
+    width: 100%;
+    position: relative;
+    margin-bottom: 25px;
+
+
+}
+.input-box input{
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    border-radius: 40px;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    outline: none;
+    background: transparent;
+    padding-right: 40px;
+}
+.input-box input::placeholder{
+    color:#fff;
+}
+.input-box i.fa-lock{
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    color: #fff;
+}
+.input-box i.fa-users{
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    color: #fff;
+}
+.remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+    font-size: 14px;
+    color: #fff;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.remember-forgot a,.login-signup a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.5s ease;
+    font-weight: bold;
+}
+
+.remember-forgot input {
+    width: auto; /* Empêche la checkbox de prendre toute la largeur */
+    margin: 1px 8px 0 0; 
+}
+.remember-forgot a:hover,.login-signup a:hover{
+    text-decoration: underline;
+}
+.btn{
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    color: #100202;
+    background-color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    transition: 0.5s;
+    border: 2px solid transparent;
+}
+.btn:hover{
+     background: radial-gradient(circle at top, #001f3f 0%, #00050a 100%);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+
+}
+.login-signup{
+    text-align: center;
+    margin-top: 25px;
+    color: #fff;
+    font-size: 14px;
+}
+/* On élargit la carte spécifiquement pour l'inscription */
+.signup-card {
+    max-width: 500px; /* Plus large que les 400px de la connexion */
+}
+
+/* Pour mettre le mot de passe et la confirmation côte à côte sur écran large */
+.input-row {
+    display: flex;
+    gap: 15px;
+}
+
+.input-row .input-group {
+    flex: 1;
+}
+
+/* Style pour les cases à cocher en bas */
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 12px;
+    text-align: left;
+    font-size: 13px;
+    color: #444;
+}
+
+.checkbox-group input {
+    margin-top: 3px;
+    width: auto;
+}
+
+.checkbox-group a {
+    color: #002d5a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Responsive : sur téléphone, on remet les mots de passe l'un sous l'autre */
+@media (max-width: 480px) {
+    .input-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+/* Pour tous les titres H2 dans tes boîtes */
+.login-box h2 {
+    color: #fff; /* Blanc pur */
+    text-align: center;
+}
+
+/* Pour les labels de tes champs (Email, Password, etc.) */
+.login-box .user-box label {
+    color: #fff; /* Met le texte des labels en blanc */
+}
+
+/* Pour les textes de bas de page (ex: "Déjà inscrit ?") */
+.login-box p, .login-box span, .login-box a.link-footer {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/* Pour les checkboxes (Terms & Conditions) */
+.login-box .checkbox-text {
+    color: #ffffff;
+}
